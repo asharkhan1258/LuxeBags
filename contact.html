@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact LuxeBags | Custom Leather Handbags</title>
+
+  <meta name="description" content="Contact LuxeBags for custom leather handbag orders, support, personalization questions, delivery details, and business inquiries." />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/product.css" />
+  <link rel="stylesheet" href="css/customize.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar py-2">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6">
+          <small>
+            <i class="fa-solid fa-truck-fast me-1"></i>
+            Free shipping on custom orders above $150
+          </small>
+        </div>
+
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <small>
+            <i class="fa-solid fa-phone me-1"></i>
+            Call / WhatsApp: +1 888 000 1234
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-logo" href="index.html">
+        <i class="fa-solid fa-bag-shopping me-2"></i>
+        LuxeBags
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="customize.html">Customize</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#collections">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="shop.html" class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <a href="#" class="nav-icon">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+
+          <button
+            class="btn cart-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Offcanvas -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+        Your Cart
+      </h5>
+
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems">
+        <div class="empty-cart text-center py-5">
+          <i class="fa-solid fa-bag-shopping mb-3"></i>
+          <h6>Your cart is empty</h6>
+          <p class="text-muted small">
+            Add your favorite leather handbags to cart.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart-summary border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between mb-3">
+          <strong>Total:</strong>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="btn btn-main w-100 mb-2">
+          View Cart
+        </a>
+
+        <a href="checkout.html" class="btn btn-outline-main w-100">
+          Checkout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Hero -->
+  <section class="page-hero contact-page-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="section-badge">
+            <i class="fa-solid fa-headset me-2"></i>
+            Contact LuxeBags
+          </span>
+
+          <h1 class="page-title mt-3">
+            Need Help With a Custom Leather Handbag?
+          </h1>
+
+          <p class="page-text">
+            Contact our team for custom orders, leather color questions, delivery
+            details, payment support, or handbag personalization guidance.
+          </p>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb shop-breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="contact-hero-card">
+            <i class="fa-solid fa-comments"></i>
+            <h5>Fast Customer Support</h5>
+            <p>
+              Send your message and our team will help you with your order,
+              customization, or delivery question.
+            </p>
+
+            <a href="https://wa.me/18880001234" class="btn btn-main" target="_blank">
+              <i class="fa-brands fa-whatsapp me-2"></i>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Cards -->
+  <section class="section-padding contact-info-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card">
+            <i class="fa-solid fa-phone"></i>
+            <h5>Call Us</h5>
+            <p>Speak with our support team.</p>
+            <a href="tel:+18880001234">+1 888 000 1234</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h5>Email Us</h5>
+            <p>Send your custom order query.</p>
+            <a href="mailto:info@luxebags.com">info@luxebags.com</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h5>WhatsApp</h5>
+            <p>Quick support for customers.</p>
+            <a href="https://wa.me/18880001234" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>Location</h5>
+            <p>Custom leather handbag studio.</p>
+            <a href="#">New York, USA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Details -->
+  <section class="section-padding contact-main-section">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Form -->
+        <div class="col-lg-7">
+          <div class="contact-form-card">
+            <span class="section-badge">Send Message</span>
+
+            <h2 class="section-title mt-2">
+              Tell Us What You Need
+            </h2>
+
+            <p class="section-text">
+              Fill out the form below and we will respond with support for your
+              custom leather handbag order.
+            </p>
+
+            <form class="row g-3 mt-2" id="contactForm">
+              <div class="col-md-6">
+                <label class="form-label" for="contactName">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="contactEmail">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="contactPhone">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="contactPhone"
+                  placeholder="+1 888 000 1234"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="contactSubject">
+                  Subject
+                </label>
+                <select class="form-select" id="contactSubject" required>
+                  <option value="">Choose subject</option>
+                  <option>Custom Bag Order</option>
+                  <option>Delivery Question</option>
+                  <option>Payment Support</option>
+                  <option>Return / Issue</option>
+                  <option>Business Inquiry</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="contactOrderNumber">
+                  Order Number
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactOrderNumber"
+                  placeholder="Optional: LB-1234567"
+                />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="contactMessageText">
+                  Message
+                </label>
+                <textarea
+                  class="form-control"
+                  id="contactMessageText"
+                  rows="5"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-main">
+                  Send Message
+                  <i class="fa-solid fa-paper-plane ms-2"></i>
+                </button>
+              </div>
+
+              <div class="col-12">
+                <p class="form-message mb-0" id="contactMessage"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-lg-5">
+          <div class="contact-side-card">
+            <span class="section-badge">Support Details</span>
+
+            <h3 class="mt-3">
+              Customer Care Hours
+            </h3>
+
+            <p>
+              Our support team can help you choose bag styles, confirm custom
+              options, and answer checkout questions.
+            </p>
+
+            <div class="contact-hours-list">
+              <div>
+                <span>Monday - Friday</span>
+                <strong>9:00 AM - 6:00 PM</strong>
+              </div>
+
+              <div>
+                <span>Saturday</span>
+                <strong>10:00 AM - 4:00 PM</strong>
+              </div>
+
+              <div>
+                <span>Sunday</span>
+                <strong>Closed</strong>
+              </div>
+            </div>
+
+            <div class="contact-mini-cta">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <div>
+                <h5>Want a custom bag?</h5>
+                <p>
+                  Use our custom builder to choose style, color, strap, hardware,
+                  initials, and more.
+                </p>
+                <a href="customize.html" class="btn btn-main btn-sm">
+                  Customize Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social-card mt-4">
+            <h5>Follow Us</h5>
+            <p>See new arrivals, custom ideas, and leather care tips.</p>
+
+            <div class="footer-social">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="contact-map-section">
+    <div class="container">
+      <div class="contact-map-box">
+        <div class="contact-map-placeholder">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h3>Visit Our Leather Bag Studio</h3>
+          <p>
+            New York, USA — Replace this box with Google Maps iframe when your
+            real business location is ready.
+          </p>
+          <a href="#" class="btn btn-outline-main">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <span class="section-badge">Contact FAQs</span>
+
+          <h2 class="section-title mt-2">
+            Before You Contact Us
+          </h2>
+
+          <p class="section-text">
+            These quick answers can help with common custom order and support
+            questions.
+          </p>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="accordion custom-accordion" id="contactFaq">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="contactFaqOneHeading">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactFaqOne"
+                  aria-expanded="true"
+                  aria-controls="contactFaqOne"
+                >
+                  Can I ask questions before placing a custom order?
+                </button>
+              </h2>
+
+              <div
+                id="contactFaqOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="contactFaqOneHeading"
+                data-bs-parent="#contactFaq"
+              >
+                <div class="accordion-body">
+                  Yes, you can contact us before ordering. We can help with bag
+                  style, leather color, initials, hardware, and delivery questions.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="contactFaqTwoHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactFaqTwo"
+                  aria-expanded="false"
+                  aria-controls="contactFaqTwo"
+                >
+                  How fast will support reply?
+                </button>
+              </h2>
+
+              <div
+                id="contactFaqTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="contactFaqTwoHeading"
+                data-bs-parent="#contactFaq"
+              >
+                <div class="accordion-body">
+                  Usually, support replies within business hours. For urgent
+                  order questions, WhatsApp is the fastest option.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="contactFaqThreeHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactFaqThree"
+                  aria-expanded="false"
+                  aria-controls="contactFaqThree"
+                >
+                  Can I change my custom order after submitting?
+                </button>
+              </h2>
+
+              <div
+                id="contactFaqThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="contactFaqThreeHeading"
+                data-bs-parent="#contactFaq"
+              >
+                <div class="accordion-body">
+                  You should contact us as soon as possible. If production has
+                  not started, some details may be changed.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <i class="fa-solid fa-bag-shopping me-2"></i>
+            LuxeBags
+          </a>
+
+          <p class="footer-text mt-3">
+            We create premium customized leather handbags for women who want
+            style, quality, and personal identity in one beautiful piece.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Tote Bags</a></li>
+            <li><a href="shop.html">Shoulder Bags</a></li>
+            <li><a href="shop.html">Crossbody Bags</a></li>
+            <li><a href="shop.html">Office Bags</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customize.html">Customize</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> info@luxebags.com</li>
+            <li><i class="fa-solid fa-phone"></i> +1 888 000 1234</li>
+            <li><i class="fa-solid fa-location-dot"></i> New York, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="copyright mb-0">
+            © 2026 LuxeBags. All rights reserved.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <p class="payment-text mb-0">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-solid fa-money-bill-wave"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your Cart | LuxeBags</title>
+
+  <meta name="description" content="Review your leather handbag cart, update quantities, apply discount coupon, and proceed to secure checkout." />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/product.css" />
+  <link rel="stylesheet" href="css/customize.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar py-2">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6">
+          <small>
+            <i class="fa-solid fa-truck-fast me-1"></i>
+            Free shipping on custom orders above $150
+          </small>
+        </div>
+
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <small>
+            <i class="fa-solid fa-phone me-1"></i>
+            Call / WhatsApp: +1 888 000 1234
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-logo" href="index.html">
+        <i class="fa-solid fa-bag-shopping me-2"></i>
+        LuxeBags
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="customize.html">Customize</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#collections">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="shop.html" class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <a href="#" class="nav-icon">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+
+          <button
+            class="btn cart-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Offcanvas -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+        Your Cart
+      </h5>
+
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems">
+        <div class="empty-cart text-center py-5">
+          <i class="fa-solid fa-bag-shopping mb-3"></i>
+          <h6>Your cart is empty</h6>
+          <p class="text-muted small">
+            Add your favorite leather handbags to cart.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart-summary border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between mb-3">
+          <strong>Total:</strong>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="btn btn-main w-100 mb-2">
+          View Cart
+        </a>
+
+        <a href="checkout.html" class="btn btn-outline-main w-100">
+          Checkout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero cart-page-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="section-badge">
+            <i class="fa-solid fa-cart-shopping me-2"></i>
+            Shopping Cart
+          </span>
+
+          <h1 class="page-title mt-3">
+            Review Your Custom Bag Order
+          </h1>
+
+          <p class="page-text">
+            Check your selected leather handbags, update quantities, apply a
+            coupon code, and continue to secure checkout.
+          </p>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb shop-breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Cart
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="cart-hero-card">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h5>Secure Shopping</h5>
+            <p>
+              Your cart details are saved in your browser until you complete
+              checkout or clear the cart.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Main -->
+  <section class="section-padding cart-page-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Cart Items -->
+        <div class="col-lg-8">
+          <div class="cart-page-card">
+            <div class="cart-page-header">
+              <div>
+                <h3>Your Items</h3>
+                <p class="mb-0 text-muted">
+                  Total items: <span id="cartPageItemCount">0</span>
+                </p>
+              </div>
+
+              <button class="btn btn-outline-main btn-sm" id="clearCartBtn">
+                <i class="fa-solid fa-trash me-1"></i>
+                Clear Cart
+              </button>
+            </div>
+
+            <div class="free-shipping-box">
+              <div class="d-flex justify-content-between gap-3">
+                <span id="freeShippingText">
+                  Add $150.00 more for free shipping
+                </span>
+                <strong>$150+</strong>
+              </div>
+
+              <div class="progress free-shipping-progress mt-2">
+                <div
+                  class="progress-bar"
+                  id="freeShippingProgress"
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div id="cartPageItems">
+              <!-- JS will render cart items here -->
+            </div>
+
+            <div class="cart-page-actions">
+              <a href="shop.html" class="btn btn-outline-main">
+                <i class="fa-solid fa-arrow-left me-2"></i>
+                Continue Shopping
+              </a>
+
+              <a href="customize.html" class="btn btn-main">
+                Customize Another Bag
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-lg-4">
+          <div class="order-summary-card sticky-lg-top">
+            <h3>Order Summary</h3>
+
+            <div class="coupon-box">
+              <label class="form-label" for="couponInput">
+                Coupon Code
+              </label>
+
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="couponInput"
+                  placeholder="Try LUXE10"
+                />
+
+                <button class="btn btn-main" type="button" id="applyCouponBtn">
+                  Apply
+                </button>
+              </div>
+
+              <small class="coupon-message" id="couponMessage"></small>
+            </div>
+
+            <div class="summary-lines">
+              <div>
+                <span>Subtotal</span>
+                <strong id="cartPageSubtotal">$0.00</strong>
+              </div>
+
+              <div>
+                <span>Discount</span>
+                <strong id="cartPageDiscount">-$0.00</strong>
+              </div>
+
+              <div>
+                <span>Shipping</span>
+                <strong id="cartPageShipping">$0.00</strong>
+              </div>
+            </div>
+
+            <div class="summary-total">
+              <span>Total</span>
+              <strong id="cartPageGrandTotal">$0.00</strong>
+            </div>
+
+            <a href="checkout.html" class="btn btn-main w-100 mt-3" id="checkoutBtn">
+              Proceed to Checkout
+              <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+
+            <div class="summary-support">
+              <div>
+                <i class="fa-solid fa-lock"></i>
+                Secure checkout
+              </div>
+
+              <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                Free shipping over $150
+              </div>
+
+              <div>
+                <i class="fa-solid fa-rotate-left"></i>
+                Easy support for order issues
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Features -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-cow"></i>
+            <h5>Genuine Leather</h5>
+            <p>
+              Premium leather material with durable finishing and clean stitching.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h5>Custom Options</h5>
+            <p>
+              Add initials, leather color, hardware finish, and strap style.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-headset"></i>
+            <h5>Order Support</h5>
+            <p>
+              Contact our team for design confirmation or checkout questions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h5>Safe Checkout</h5>
+            <p>
+              Review all items and custom details before placing your order.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <i class="fa-solid fa-bag-shopping me-2"></i>
+            LuxeBags
+          </a>
+
+          <p class="footer-text mt-3">
+            We create premium customized leather handbags for women who want
+            style, quality, and personal identity in one beautiful piece.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Tote Bags</a></li>
+            <li><a href="shop.html">Shoulder Bags</a></li>
+            <li><a href="shop.html">Crossbody Bags</a></li>
+            <li><a href="shop.html">Office Bags</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customize.html">Customize</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> info@luxebags.com</li>
+            <li><i class="fa-solid fa-phone"></i> +1 888 000 1234</li>
+            <li><i class="fa-solid fa-location-dot"></i> New York, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="copyright mb-0">
+            © 2026 LuxeBags. All rights reserved.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <p class="payment-text mb-0">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-solid fa-money-bill-wave"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+.about-page-hero {
+  background: linear-gradient(135deg, var(--cream), #ffffff);
+}
+
+.about-hero-image,
+.about-story-image,
+.about-craft-image {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.about-hero-image {
+  position: relative;
+}
+
+.about-hero-image img,
+.about-story-image img,
+.about-craft-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-hero-badge {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+
+.about-hero-badge i {
+  color: var(--gold);
+  font-size: 26px;
+}
+
+.about-hero-badge strong {
+  color: var(--dark);
+  display: block;
+  font-weight: 900;
+}
+
+.about-hero-badge span {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.about-check-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.about-check-list div {
+  color: var(--dark);
+  font-weight: 800;
+}
+
+.about-check-list i {
+  color: var(--gold);
+  margin-right: 8px;
+}
+
+.about-stats-section {
+  background: linear-gradient(135deg, var(--dark), #4a2d20);
+  padding: 70px 0;
+}
+
+.about-stat-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  padding: 28px;
+  text-align: center;
+  height: 100%;
+}
+
+.about-stat-card i {
+  width: 58px;
+  height: 58px;
+  background-color: var(--gold);
+  color: var(--dark);
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.about-stat-card h3 {
+  color: var(--white);
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.about-stat-card p {
+  color: var(--cream);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.about-values-section,
+.about-process-section {
+  background-color: var(--light-bg);
+}
+
+.about-value-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(43, 27, 20, 0.08);
+}
+
+.about-value-card i {
+  width: 60px;
+  height: 60px;
+  background-color: var(--cream);
+  color: var(--leather);
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+.about-value-card h5 {
+  color: var(--dark);
+  font-weight: 900;
+}
+
+.about-value-card p {
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.about-craft-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.about-craft-grid div {
+  background-color: var(--light-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.about-craft-grid i {
+  color: var(--gold);
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.about-craft-grid h6 {
+  color: var(--dark);
+  font-weight: 900;
+}
+
+.about-craft-grid p {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.about-cta-section {
+  padding: 30px 0 90px;
+}
+
+.about-cta-box {
+  background: linear-gradient(135deg, var(--leather), var(--dark));
+  border-radius: 34px;
+  padding: 50px;
+  color: var(--white);
+}
+
+.about-cta-box h2 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 38px;
+}
+
+.about-cta-box p {
+  color: var(--cream);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.about-cta-box .btn-outline-main {
+  color: var(--cream);
+  border-color: var(--cream);
+}
+
+.about-cta-box .btn-outline-main:hover {
+  background-color: var(--cream);
+  color: var(--dark);
+}
+
+@media (max-width: 991px) {
+  .about-hero-image img,
+  .about-story-image img,
+  .about-craft-image img {
+    height: 430px;
+  }
+
+  .about-cta-box {
+    padding: 35px;
+  }
+
+  .about-cta-box h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-hero-image img,
+  .about-story-image img,
+  .about-craft-image img {
+    height: 340px;
+  }
+
+  .about-hero-badge {
+    position: static;
+    margin-top: 15px;
+  }
+
+  .about-craft-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta-box {
+    padding: 26px;
+    border-radius: 24px;
+  }
+
+  .about-cta-box .btn {
+    width: 100%;
+  }
+
+  .about-stat-card h3 {
+    font-size: 32px;
+  }
+}

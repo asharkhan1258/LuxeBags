@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Custom Leather Handbags | Handmade Luxury Bags</title>
+
+  <meta name="description" content="Shop premium customized leather handbags. Choose your style, leather color, initials, strap, and hardware for a bag made just for you." />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar py-2">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6">
+          <small>
+            <i class="fa-solid fa-truck-fast me-1"></i>
+            Free shipping on custom orders above $150
+          </small>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <small>
+            <i class="fa-solid fa-phone me-1"></i>
+            Call / WhatsApp: +1 888 000 1234
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-logo" href="index.html">
+        <i class="fa-solid fa-bag-shopping me-2"></i>
+        LuxeBags
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="customize.html">Customize</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#collections">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="shop.html" class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <a href="#" class="nav-icon">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+
+          <button
+            class="btn cart-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Offcanvas -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+        Your Cart
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems">
+        <div class="empty-cart text-center py-5">
+          <i class="fa-solid fa-bag-shopping mb-3"></i>
+          <h6>Your cart is empty</h6>
+          <p class="text-muted small">
+            Add your favorite leather handbags to cart.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart-summary border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between mb-3">
+          <strong>Total:</strong>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="btn btn-main w-100 mb-2">
+          View Cart
+        </a>
+
+        <a href="checkout.html" class="btn btn-outline-main w-100">
+          Checkout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-badge mb-3">
+            <i class="fa-solid fa-gem me-2"></i>
+            Handmade Custom Leather Bags
+          </span>
+
+          <h1 class="hero-title">
+            Custom Leather Handbags Made Just for You
+          </h1>
+
+          <p class="hero-text">
+            Design your own premium leather handbag with custom colors,
+            initials, stitching, strap style, and elegant hardware.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="shop.html" class="btn btn-main btn-lg">
+              Shop Now
+              <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+
+            <a href="customize.html" class="btn btn-outline-main btn-lg">
+              Customize Your Bag
+            </a>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-6 col-md-4">
+              <div class="hero-feature">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Genuine Leather</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="hero-feature">
+                <i class="fa-solid fa-hand-sparkles"></i>
+                <span>Handmade Finish</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="hero-feature">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Secure Checkout</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80"
+              class="img-fluid hero-img"
+              alt="Custom leather handbag"
+            />
+
+            <div class="hero-floating-card">
+              <i class="fa-solid fa-star"></i>
+              <div>
+                <strong>4.9/5 Rating</strong>
+                <small>Trusted by luxury bag lovers</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section class="section-padding" id="collections">
+    <div class="container">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-7">
+          <span class="section-badge">Our Collections</span>
+          <h2 class="section-title mt-2">
+            Choose Your Perfect Bag Style
+          </h2>
+          <p class="section-text">
+            Browse premium leather handbag styles designed for everyday use,
+            office looks, travel, and luxury occasions.
+          </p>
+        </div>
+
+        <div class="col-lg-5 text-lg-end">
+          <a href="shop.html" class="btn btn-outline-main">
+            View All Collections
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <a href="shop.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+              alt="Tote bags"
+            />
+            <div class="category-content">
+              <h5>Tote Bags</h5>
+              <span>12 Products</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="shop.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+              alt="Shoulder bags"
+            />
+            <div class="category-content">
+              <h5>Shoulder Bags</h5>
+              <span>18 Products</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="shop.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"
+              alt="Crossbody bags"
+            />
+            <div class="category-content">
+              <h5>Crossbody Bags</h5>
+              <span>10 Products</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="shop.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?auto=format&fit=crop&w=700&q=80"
+              alt="Luxury leather bags"
+            />
+            <div class="category-content">
+              <h5>Luxury Bags</h5>
+              <span>9 Products</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customize Section -->
+  <section class="customize-section section-padding">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="customize-img-grid">
+            <img
+              src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=800&q=80"
+              class="img-fluid rounded-4"
+              alt="Custom leather handbag design"
+            />
+
+            <div class="customize-mini-card">
+              <i class="fa-solid fa-pen-nib"></i>
+              <h6>Add Your Initials</h6>
+              <p>Personalize your bag with your name or initials.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <span class="section-badge">Customize Your Bag</span>
+
+          <h2 class="section-title mt-2">
+            Create a Leather Handbag That Matches Your Style
+          </h2>
+
+          <p class="section-text">
+            Choose the leather color, bag size, strap style, stitching shade,
+            hardware finish, and add initials to make your handbag unique.
+          </p>
+
+          <div class="row g-3 mt-3">
+            <div class="col-sm-6">
+              <div class="custom-option">
+                <i class="fa-solid fa-palette"></i>
+                <div>
+                  <h6>Leather Color</h6>
+                  <p>Brown, black, tan, red, beige and more.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="custom-option">
+                <i class="fa-solid fa-signature"></i>
+                <div>
+                  <h6>Name / Initials</h6>
+                  <p>Add custom initials for a personal finish.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="custom-option">
+                <i class="fa-solid fa-link"></i>
+                <div>
+                  <h6>Strap Style</h6>
+                  <p>Short handle, long strap, chain or crossbody.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="custom-option">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <div>
+                  <h6>Hardware Finish</h6>
+                  <p>Gold, silver, bronze or matte black.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="customize.html" class="btn btn-main mt-4">
+            Start Custom Order
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Selling Products -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Best Sellers</span>
+        <h2 class="section-title mt-2">
+          Customer Favorite Leather Handbags
+        </h2>
+        <p class="section-text mx-auto">
+          Explore our most loved handmade leather bags with beautiful finishing,
+          premium material, and custom options.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=80"
+                alt="Classic leather tote bag"
+              />
+
+              <span class="product-label">Best Seller</span>
+
+              <div class="product-actions">
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>(48)</span>
+              </div>
+
+              <h5>Classic Leather Tote</h5>
+              <p>Premium handmade tote with custom initials.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$129.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Classic Leather Tote"
+                  data-price="129"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                alt="Elegant shoulder bag"
+              />
+
+              <span class="product-label">New</span>
+
+              <div class="product-actions">
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(32)</span>
+              </div>
+
+              <h5>Elegant Shoulder Bag</h5>
+              <p>Soft leather shoulder bag for daily luxury.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$149.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Elegant Shoulder Bag"
+                  data-price="149"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"
+                alt="Crossbody leather bag"
+              />
+
+              <span class="product-label">Custom</span>
+
+              <div class="product-actions">
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(61)</span>
+              </div>
+
+              <h5>Crossbody Leather Bag</h5>
+              <p>Compact custom bag with adjustable strap.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$119.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Crossbody Leather Bag"
+                  data-price="119"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?auto=format&fit=crop&w=700&q=80"
+                alt="Luxury office leather bag"
+              />
+
+              <span class="product-label">Premium</span>
+
+              <div class="product-actions">
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button class="product-action-btn">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>(27)</span>
+              </div>
+
+              <h5>Luxury Office Bag</h5>
+              <p>Elegant leather bag for office and business use.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$179.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Luxury Office Bag"
+                  data-price="179"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="shop.html" class="btn btn-outline-main">
+          View All Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-section section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Why Choose Us</span>
+        <h2 class="section-title mt-2">
+          Premium Quality in Every Detail
+        </h2>
+        <p class="section-text mx-auto">
+          We focus on material, comfort, finishing, personalization, and a smooth
+          shopping experience.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-cow"></i>
+            <h5>Genuine Leather</h5>
+            <p>
+              We use quality leather for a strong, elegant, and long-lasting finish.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-scissors"></i>
+            <h5>Handmade Craft</h5>
+            <p>
+              Every handbag is made with care, clean stitching, and detailed finishing.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h5>Custom Design</h5>
+            <p>
+              Choose colors, initials, strap, stitching, and hardware as you like.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="why-card">
+            <i class="fa-solid fa-lock"></i>
+            <h5>Secure Checkout</h5>
+            <p>
+              Shop with confidence using safe checkout and clear order details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Order Form Preview -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="custom-form-box">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <span class="section-badge">Quick Custom Request</span>
+
+            <h2 class="section-title mt-2">
+              Tell Us Your Dream Bag Style
+            </h2>
+
+            <p class="section-text">
+              Fill this quick request form and our team will contact you with
+              design options, pricing, and delivery details.
+            </p>
+
+            <ul class="custom-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Select your bag style
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Choose leather color and hardware
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Add name or initials
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Receive order confirmation
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7">
+            <form class="row g-3" id="customRequestForm">
+              <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Bag Style</label>
+                <select class="form-select" required>
+                  <option value="">Choose style</option>
+                  <option>Tote Bag</option>
+                  <option>Shoulder Bag</option>
+                  <option>Crossbody Bag</option>
+                  <option>Office Bag</option>
+                  <option>Mini Bag</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Leather Color</label>
+                <select class="form-select" required>
+                  <option value="">Choose color</option>
+                  <option>Classic Brown</option>
+                  <option>Black</option>
+                  <option>Tan</option>
+                  <option>Beige</option>
+                  <option>Red</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Initials / Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Example: NB"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Hardware Finish</label>
+                <select class="form-select">
+                  <option>Gold</option>
+                  <option>Silver</option>
+                  <option>Bronze</option>
+                  <option>Matte Black</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Special Instructions</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Write your custom design details..."
+                ></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-main">
+                  Submit Custom Request
+                  <i class="fa-solid fa-paper-plane ms-2"></i>
+                </button>
+              </div>
+
+              <div class="col-12">
+                <p class="form-message mb-0" id="formMessage"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews-section section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Customer Reviews</span>
+        <h2 class="section-title mt-2">
+          Loved by Our Customers
+        </h2>
+        <p class="section-text mx-auto">
+          Real feedback from customers who ordered personalized leather handbags.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+              “The leather quality feels premium and the custom initials look
+              beautiful. My tote bag is perfect for work.”
+            </p>
+
+            <div class="review-user">
+              <div class="review-avatar">A</div>
+              <div>
+                <h6>Amanda R.</h6>
+                <small>Verified Buyer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <p>
+              “I ordered a crossbody bag with gold hardware. The finishing and
+              stitching are very clean.”
+            </p>
+
+            <div class="review-user">
+              <div class="review-avatar">S</div>
+              <div>
+                <h6>Sophia M.</h6>
+                <small>Verified Buyer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>
+              “The custom request process was simple. I got exactly the leather
+              color and strap style I wanted.”
+            </p>
+
+            <div class="review-user">
+              <div class="review-avatar">M</div>
+              <div>
+                <h6>Mia K.</h6>
+                <small>Verified Buyer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <span class="section-badge">FAQs</span>
+          <h2 class="section-title mt-2">
+            Common Questions About Custom Leather Bags
+          </h2>
+          <p class="section-text">
+            Find quick answers about customization, delivery, leather quality,
+            payments, and returns.
+          </p>
+
+          <a href="contact.html" class="btn btn-outline-main">
+            Ask a Question
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="accordion custom-accordion" id="homeFaq">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqOneHeading">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqOne"
+                  aria-expanded="true"
+                  aria-controls="faqOne"
+                >
+                  Can I customize the leather color?
+                </button>
+              </h2>
+
+              <div
+                id="faqOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="faqOneHeading"
+                data-bs-parent="#homeFaq"
+              >
+                <div class="accordion-body">
+                  Yes, you can choose from multiple leather colors including
+                  brown, black, tan, beige, red, and more depending on availability.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqTwoHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqTwo"
+                  aria-expanded="false"
+                  aria-controls="faqTwo"
+                >
+                  Can I add my name or initials?
+                </button>
+              </h2>
+
+              <div
+                id="faqTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqTwoHeading"
+                data-bs-parent="#homeFaq"
+              >
+                <div class="accordion-body">
+                  Yes, you can add your initials or name to selected handbags for
+                  a personalized luxury finish.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqThreeHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqThree"
+                  aria-expanded="false"
+                  aria-controls="faqThree"
+                >
+                  How long does a custom order take?
+                </button>
+              </h2>
+
+              <div
+                id="faqThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqThreeHeading"
+                data-bs-parent="#homeFaq"
+              >
+                <div class="accordion-body">
+                  Custom orders usually take 7 to 14 business days depending on
+                  design details, material availability, and delivery location.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqFourHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqFour"
+                  aria-expanded="false"
+                  aria-controls="faqFour"
+                >
+                  Do you offer returns on customized bags?
+                </button>
+              </h2>
+
+              <div
+                id="faqFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqFourHeading"
+                data-bs-parent="#homeFaq"
+              >
+                <div class="accordion-body">
+                  Since custom bags are made according to customer choices,
+                  returns may depend on the issue. Damaged or incorrect items
+                  can be reviewed by our support team.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2>Get 10% Off Your First Custom Bag</h2>
+            <p>
+              Join our newsletter for new arrivals, leather care tips, custom
+              design ideas, and exclusive offers.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="newsletter-form" id="newsletterForm">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  required
+                />
+
+                <button class="btn btn-main" type="submit">
+                  Subscribe
+                </button>
+              </div>
+
+              <p class="newsletter-message mb-0 mt-2" id="newsletterMessage"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <i class="fa-solid fa-bag-shopping me-2"></i>
+            LuxeBags
+          </a>
+
+          <p class="footer-text mt-3">
+            We create premium customized leather handbags for women who want
+            style, quality, and personal identity in one beautiful piece.
+          </p>
+
+          <div class="footer-social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Tote Bags</a></li>
+            <li><a href="shop.html">Shoulder Bags</a></li>
+            <li><a href="shop.html">Crossbody Bags</a></li>
+            <li><a href="shop.html">Office Bags</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customize.html">Customize</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              info@luxebags.com
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              +1 888 000 1234
+            </li>
+
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              New York, USA
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="copyright mb-0">
+            © 2026 LuxeBags. All rights reserved.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <p class="payment-text mb-0">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-solid fa-money-bill-wave"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Checkout | LuxeBags</title>
+
+  <meta name="description" content="Complete your LuxeBags order with billing details, shipping address, payment method, and secure checkout summary." />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/product.css" />
+  <link rel="stylesheet" href="css/customize.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar py-2">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6">
+          <small>
+            <i class="fa-solid fa-truck-fast me-1"></i>
+            Free shipping on custom orders above $150
+          </small>
+        </div>
+
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <small>
+            <i class="fa-solid fa-phone me-1"></i>
+            Call / WhatsApp: +1 888 000 1234
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-logo" href="index.html">
+        <i class="fa-solid fa-bag-shopping me-2"></i>
+        LuxeBags
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="customize.html">Customize</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#collections">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="shop.html" class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <a href="#" class="nav-icon">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+
+          <button
+            class="btn cart-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Offcanvas -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+        Your Cart
+      </h5>
+
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems">
+        <div class="empty-cart text-center py-5">
+          <i class="fa-solid fa-bag-shopping mb-3"></i>
+          <h6>Your cart is empty</h6>
+          <p class="text-muted small">
+            Add your favorite leather handbags to cart.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart-summary border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between mb-3">
+          <strong>Total:</strong>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="btn btn-main w-100 mb-2">
+          View Cart
+        </a>
+
+        <a href="checkout.html" class="btn btn-outline-main w-100">
+          Checkout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero checkout-page-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="section-badge">
+            <i class="fa-solid fa-lock me-2"></i>
+            Secure Checkout
+          </span>
+
+          <h1 class="page-title mt-3">
+            Complete Your Order
+          </h1>
+
+          <p class="page-text">
+            Add your billing details, delivery address, payment method, and
+            confirm your custom leather handbag order.
+          </p>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb shop-breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="cart.html">Cart</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Checkout
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="checkout-hero-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h5>Safe Order Review</h5>
+            <p>
+              Review your cart, shipping, discount, and payment method before
+              placing your order.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Main -->
+  <section class="section-padding checkout-page-section">
+    <div class="container">
+      <form id="checkoutForm">
+        <div class="row g-4">
+
+          <!-- Checkout Form -->
+          <div class="col-lg-8">
+            <div class="checkout-card">
+              <div class="checkout-card-title">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                  <h3>Billing Details</h3>
+                  <p>Enter your contact and delivery information.</p>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="checkoutName">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkoutName"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="checkoutEmail">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="checkoutEmail"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="checkoutPhone">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="checkoutPhone"
+                    placeholder="+1 888 000 1234"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="checkoutCountry">
+                    Country
+                  </label>
+                  <select class="form-select" id="checkoutCountry" required>
+                    <option value="">Select country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Pakistan</option>
+                    <option>United Arab Emirates</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="checkoutAddress">
+                    Street Address
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkoutAddress"
+                    placeholder="House number, street, area"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label" for="checkoutCity">
+                    City
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkoutCity"
+                    placeholder="City"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label" for="checkoutState">
+                    State / Province
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkoutState"
+                    placeholder="State"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label" for="checkoutZip">
+                    ZIP / Postal Code
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkoutZip"
+                    placeholder="10001"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout-card mt-4">
+              <div class="checkout-card-title">
+                <i class="fa-solid fa-credit-card"></i>
+                <div>
+                  <h3>Payment Method</h3>
+                  <p>Select how you want to pay for your order.</p>
+                </div>
+              </div>
+
+              <div class="payment-methods">
+                <label class="payment-method active">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="Cash on Delivery"
+                    checked
+                  />
+                  <span>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Cash on Delivery
+                  </span>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="Bank Transfer"
+                  />
+                  <span>
+                    <i class="fa-solid fa-building-columns"></i>
+                    Bank Transfer
+                  </span>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="Card Payment"
+                  />
+                  <span>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Card Payment
+                  </span>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="PayPal"
+                  />
+                  <span>
+                    <i class="fa-brands fa-paypal"></i>
+                    PayPal
+                  </span>
+                </label>
+              </div>
+
+              <div class="payment-help" id="paymentHelp">
+                <i class="fa-solid fa-circle-info"></i>
+                You will pay when your order is delivered.
+              </div>
+            </div>
+
+            <div class="checkout-card mt-4">
+              <div class="checkout-card-title">
+                <i class="fa-solid fa-note-sticky"></i>
+                <div>
+                  <h3>Order Notes</h3>
+                  <p>Add any extra delivery or custom bag notes.</p>
+                </div>
+              </div>
+
+              <textarea
+                class="form-control"
+                id="checkoutNotes"
+                rows="4"
+                placeholder="Example: Please confirm initials before production..."
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Checkout Summary -->
+          <div class="col-lg-4">
+            <div class="checkout-summary-card sticky-lg-top">
+              <h3>Order Summary</h3>
+
+              <div id="checkoutItems" class="checkout-items">
+                <!-- JS will render items -->
+              </div>
+
+              <div class="checkout-summary-lines">
+                <div>
+                  <span>Subtotal</span>
+                  <strong id="checkoutSubtotal">$0.00</strong>
+                </div>
+
+                <div>
+                  <span>Discount</span>
+                  <strong id="checkoutDiscount">-$0.00</strong>
+                </div>
+
+                <div>
+                  <span>Shipping</span>
+                  <strong id="checkoutShipping">$0.00</strong>
+                </div>
+              </div>
+
+              <div class="checkout-total">
+                <span>Total</span>
+                <strong id="checkoutGrandTotal">$0.00</strong>
+              </div>
+
+              <button type="submit" class="btn btn-main w-100 mt-3" id="placeOrderBtn">
+                Place Order
+                <i class="fa-solid fa-check ms-2"></i>
+              </button>
+
+              <a href="cart.html" class="btn btn-outline-main w-100 mt-2">
+                Back to Cart
+              </a>
+
+              <div class="checkout-message" id="checkoutMessage"></div>
+
+              <div class="summary-support">
+                <div>
+                  <i class="fa-solid fa-lock"></i>
+                  Secure order review
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-truck-fast"></i>
+                  Free shipping over $150
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-headset"></i>
+                  Support available after order
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <i class="fa-solid fa-bag-shopping me-2"></i>
+            LuxeBags
+          </a>
+
+          <p class="footer-text mt-3">
+            We create premium customized leather handbags for women who want
+            style, quality, and personal identity in one beautiful piece.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Tote Bags</a></li>
+            <li><a href="shop.html">Shoulder Bags</a></li>
+            <li><a href="shop.html">Crossbody Bags</a></li>
+            <li><a href="shop.html">Office Bags</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customize.html">Customize</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> info@luxebags.com</li>
+            <li><i class="fa-solid fa-phone"></i> +1 888 000 1234</li>
+            <li><i class="fa-solid fa-location-dot"></i> New York, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="copyright mb-0">
+            © 2026 LuxeBags. All rights reserved.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <p class="payment-text mb-0">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-solid fa-money-bill-wave"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

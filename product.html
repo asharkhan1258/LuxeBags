@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Classic Leather Tote Bag | LuxeBags</title>
+
+  <meta name="description" content="Shop Classic Leather Tote Bag with custom leather color, initials, strap style, and hardware finish. Premium handmade leather handbag." />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/product.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar py-2">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-6">
+          <small>
+            <i class="fa-solid fa-truck-fast me-1"></i>
+            Free shipping on custom orders above $150
+          </small>
+        </div>
+
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <small>
+            <i class="fa-solid fa-phone me-1"></i>
+            Call / WhatsApp: +1 888 000 1234
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-logo" href="index.html">
+        <i class="fa-solid fa-bag-shopping me-2"></i>
+        LuxeBags
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="customize.html">Customize</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#collections">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="shop.html" class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <a href="#" class="nav-icon">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+
+          <button
+            class="btn cart-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Offcanvas -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+        Your Cart
+      </h5>
+
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems">
+        <div class="empty-cart text-center py-5">
+          <i class="fa-solid fa-bag-shopping mb-3"></i>
+          <h6>Your cart is empty</h6>
+          <p class="text-muted small">
+            Add your favorite leather handbags to cart.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart-summary border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between mb-3">
+          <strong>Total:</strong>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="btn btn-main w-100 mb-2">
+          View Cart
+        </a>
+
+        <a href="checkout.html" class="btn btn-outline-main w-100">
+          Checkout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Hero -->
+  <section class="product-detail-section section-padding">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb shop-breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="shop.html">Shop</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Classic Leather Tote
+          </li>
+        </ol>
+      </nav>
+
+      <div class="row g-5">
+
+        <!-- Product Images -->
+        <div class="col-lg-6">
+          <div class="product-gallery-box">
+            <div class="main-product-image">
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80"
+                alt="Classic Leather Tote Bag"
+                id="mainProductImage"
+              />
+
+              <span class="product-detail-badge">
+                Best Seller
+              </span>
+            </div>
+
+            <div class="product-thumbnails mt-3">
+              <button
+                class="product-thumb active"
+                data-image="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=300&q=80"
+                  alt="Leather tote front"
+                />
+              </button>
+
+              <button
+                class="product-thumb"
+                data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=300&q=80"
+                  alt="Leather tote side"
+                />
+              </button>
+
+              <button
+                class="product-thumb"
+                data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
+                  alt="Leather tote detail"
+                />
+              </button>
+
+              <button
+                class="product-thumb"
+                data-image="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?auto=format&fit=crop&w=900&q=80"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?auto=format&fit=crop&w=300&q=80"
+                  alt="Leather tote lifestyle"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="col-lg-6">
+          <div class="product-detail-content">
+            <span class="section-badge">
+              <i class="fa-solid fa-gem me-2"></i>
+              Premium Handmade Bag
+            </span>
+
+            <h1 class="product-detail-title mt-3">
+              Classic Leather Tote Bag
+            </h1>
+
+            <div class="product-detail-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.8 rating | 48 reviews</span>
+            </div>
+
+            <div class="product-detail-price">
+              <span>$129.00</span>
+              <del>$159.00</del>
+            </div>
+
+            <p class="product-detail-text">
+              A premium handmade leather tote bag designed for everyday use,
+              work, travel, and elegant styling. Customize it with your initials,
+              leather color, strap style, and hardware finish.
+            </p>
+
+            <div class="product-benefits">
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Genuine leather material
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Custom initials available
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Handmade premium finishing
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Secure checkout & fast delivery
+              </div>
+            </div>
+
+            <form class="product-options-form mt-4" id="productOptionsForm">
+
+              <!-- Color -->
+              <div class="product-option-group">
+                <label class="product-option-label">
+                  Leather Color
+                </label>
+
+                <div class="product-color-options">
+                  <button
+                    type="button"
+                    class="product-color-option active"
+                    data-color="Classic Brown"
+                  >
+                    <span class="dot brown"></span>
+                    Brown
+                  </button>
+
+                  <button
+                    type="button"
+                    class="product-color-option"
+                    data-color="Black"
+                  >
+                    <span class="dot black"></span>
+                    Black
+                  </button>
+
+                  <button
+                    type="button"
+                    class="product-color-option"
+                    data-color="Tan"
+                  >
+                    <span class="dot tan"></span>
+                    Tan
+                  </button>
+
+                  <button
+                    type="button"
+                    class="product-color-option"
+                    data-color="Beige"
+                  >
+                    <span class="dot beige"></span>
+                    Beige
+                  </button>
+                </div>
+              </div>
+
+              <!-- Hardware -->
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="product-option-group">
+                    <label class="product-option-label" for="hardwareFinish">
+                      Hardware Finish
+                    </label>
+
+                    <select class="form-select" id="hardwareFinish">
+                      <option>Gold</option>
+                      <option>Silver</option>
+                      <option>Bronze</option>
+                      <option>Matte Black</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="product-option-group">
+                    <label class="product-option-label" for="strapStyle">
+                      Strap Style
+                    </label>
+
+                    <select class="form-select" id="strapStyle">
+                      <option>Short Handle</option>
+                      <option>Long Strap</option>
+                      <option>Crossbody Strap</option>
+                      <option>Chain Strap</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Initials -->
+              <div class="product-option-group">
+                <label class="product-option-label" for="customInitials">
+                  Custom Initials / Name
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customInitials"
+                  placeholder="Example: NB or Nova"
+                  maxlength="15"
+                />
+              </div>
+
+              <!-- Quantity -->
+              <div class="product-option-group">
+                <label class="product-option-label">
+                  Quantity
+                </label>
+
+                <div class="product-quantity-box">
+                  <button type="button" id="productQtyMinus">-</button>
+
+                  <input
+                    type="number"
+                    id="productQuantity"
+                    value="1"
+                    min="1"
+                    max="10"
+                    readonly
+                  />
+
+                  <button type="button" id="productQtyPlus">+</button>
+                </div>
+              </div>
+
+              <div class="product-detail-buttons">
+                <button
+                  type="button"
+                  class="btn btn-main"
+                  id="productAddToCart"
+                  data-name="Classic Leather Tote Bag"
+                  data-price="129"
+                >
+                  <i class="fa-solid fa-cart-plus me-2"></i>
+                  Add to Cart
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-outline-main"
+                  id="productBuyNow"
+                  data-name="Classic Leather Tote Bag"
+                  data-price="129"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </form>
+
+            <div class="product-extra-info mt-4">
+              <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                Delivery: 7–14 business days
+              </div>
+
+              <div>
+                <i class="fa-solid fa-rotate-left"></i>
+                Return: Available for damaged or incorrect item
+              </div>
+
+              <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                Payment: Secure checkout
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Tabs -->
+  <section class="product-tabs-section">
+    <div class="container">
+      <div class="product-tabs-box">
+        <ul class="nav nav-pills product-tabs mb-4" id="productTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="description-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#description"
+              type="button"
+              role="tab"
+              aria-controls="description"
+              aria-selected="true"
+            >
+              Description
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="details-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#details"
+              type="button"
+              role="tab"
+              aria-controls="details"
+              aria-selected="false"
+            >
+              Details
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="reviews-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#reviews"
+              type="button"
+              role="tab"
+              aria-controls="reviews"
+              aria-selected="false"
+            >
+              Reviews
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="productTabsContent">
+          <div
+            class="tab-pane fade show active"
+            id="description"
+            role="tabpanel"
+            aria-labelledby="description-tab"
+          >
+            <h4>Product Description</h4>
+
+            <p>
+              The Classic Leather Tote Bag is designed for customers who want a
+              stylish, practical, and personalized handbag. It has a spacious
+              interior, soft lining, strong handles, and premium finishing.
+            </p>
+
+            <p>
+              You can customize the color, initials, strap style, and hardware
+              finish. This makes it perfect for daily use, office styling,
+              travel, or gifting.
+            </p>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="details"
+            role="tabpanel"
+            aria-labelledby="details-tab"
+          >
+            <h4>Product Details</h4>
+
+            <div class="table-responsive">
+              <table class="table product-info-table">
+                <tbody>
+                  <tr>
+                    <th>Material</th>
+                    <td>Premium genuine leather</td>
+                  </tr>
+
+                  <tr>
+                    <th>Bag Type</th>
+                    <td>Tote bag</td>
+                  </tr>
+
+                  <tr>
+                    <th>Size</th>
+                    <td>Medium / Large</td>
+                  </tr>
+
+                  <tr>
+                    <th>Customization</th>
+                    <td>Initials, leather color, hardware, strap style</td>
+                  </tr>
+
+                  <tr>
+                    <th>Delivery Time</th>
+                    <td>7–14 business days</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="reviews"
+            role="tabpanel"
+            aria-labelledby="reviews-tab"
+          >
+            <h4>Customer Reviews</h4>
+
+            <div class="product-review-item">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                “Beautiful leather quality and clean stitching. The custom
+                initials look premium.”
+              </p>
+
+              <strong>Amanda R.</strong>
+            </div>
+
+            <div class="product-review-item">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p>
+                “The bag is spacious, elegant, and perfect for work. I love the
+                gold hardware.”
+              </p>
+
+              <strong>Sophia M.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Related Products</span>
+
+        <h2 class="section-title mt-2">
+          You May Also Like
+        </h2>
+
+        <p class="section-text mx-auto">
+          Explore more premium leather handbags with custom options.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Related Product 1 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                alt="Elegant Shoulder Bag"
+              />
+
+              <span class="product-label">New</span>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(32)</span>
+              </div>
+
+              <h5>Elegant Shoulder Bag</h5>
+              <p>Soft leather shoulder bag for daily luxury.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$149.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Elegant Shoulder Bag"
+                  data-price="149"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Product 2 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"
+                alt="Crossbody Leather Bag"
+              />
+
+              <span class="product-label">Custom</span>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(61)</span>
+              </div>
+
+              <h5>Crossbody Leather Bag</h5>
+              <p>Compact custom bag with adjustable strap.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$119.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Crossbody Leather Bag"
+                  data-price="119"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Product 3 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?auto=format&fit=crop&w=700&q=80"
+                alt="Luxury Office Bag"
+              />
+
+              <span class="product-label">Premium</span>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>(27)</span>
+              </div>
+
+              <h5>Luxury Office Bag</h5>
+              <p>Elegant leather bag for office and business use.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$179.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Luxury Office Bag"
+                  data-price="179"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Product 4 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                alt="Beige Mini Handbag"
+              />
+
+              <span class="product-label">Sale</span>
+            </div>
+
+            <div class="product-content">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(19)</span>
+              </div>
+
+              <h5>Beige Mini Handbag</h5>
+              <p>Small luxury bag with soft premium leather.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <strong class="product-price">$99.00</strong>
+
+                <button
+                  class="btn btn-sm btn-main add-to-cart"
+                  data-name="Beige Mini Handbag"
+                  data-price="99"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-logo" href="index.html">
+            <i class="fa-solid fa-bag-shopping me-2"></i>
+            LuxeBags
+          </a>
+
+          <p class="footer-text mt-3">
+            We create premium customized leather handbags for women who want
+            style, quality, and personal identity in one beautiful piece.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Tote Bags</a></li>
+            <li><a href="shop.html">Shoulder Bags</a></li>
+            <li><a href="shop.html">Crossbody Bags</a></li>
+            <li><a href="shop.html">Office Bags</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customize.html">Customize</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> info@luxebags.com</li>
+            <li><i class="fa-solid fa-phone"></i> +1 888 000 1234</li>
+            <li><i class="fa-solid fa-location-dot"></i> New York, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="copyright mb-0">
+            © 2026 LuxeBags. All rights reserved.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <p class="payment-text mb-0">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-solid fa-money-bill-wave"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
